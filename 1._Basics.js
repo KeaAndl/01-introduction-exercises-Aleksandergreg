@@ -21,7 +21,8 @@ const increment = 1;
 // The result should be 2025
 // You cannot touch the first or the second line
 
-console.log(Number(year) + increment)
+console.log(parseInt(year) + increment);
+
 
 
 // --------------------------------------
