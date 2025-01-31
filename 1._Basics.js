@@ -20,8 +20,11 @@ const increment = 1;
 // Add the year plus the increment
 // The result should be 2025
 // You cannot touch the first or the second line
+//could also use c
 
+console.log(Number(year) + increment);
 console.log(parseInt(year) + increment);
+console.log(+year + increment);
 
 
 
