@@ -30,7 +30,12 @@ const three = 98;
 
 // Show in the console the avg. with 5 decimals
 
-const sum1 = parseFloat(one) + parseFloat(two)
+const sumArray = [10, 45, 98];
+const sum1 = one + two + three;
+const avg = sum1/sumArray.length;
+const formatAvg = avg.toFixed(5);
+
+console.log(formatAvg);
 
 
 
@@ -40,9 +45,9 @@ const sum1 = parseFloat(one) + parseFloat(two)
 
 const letters = "abc";
 // Get me the character "c"
+const characterC = letters[2];
 
-
-
+console.log(characterC)
 
 // --------------------------------------
 // Exercise 7 - Replace
@@ -50,6 +55,11 @@ const letters = "abc";
 const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
+
+const capitalizedFact = fact.replace("javascript", "Javascript");
+
+console.log(capitalizedFact);
+
 
 
 // --------------------------------------
