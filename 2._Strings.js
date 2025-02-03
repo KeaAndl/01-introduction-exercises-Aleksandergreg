@@ -16,9 +16,11 @@ const anotherNumberOne = "1.10";
 const anotherNumberTwo = "2.30";
 
 const sum = parseFloat(anotherNumberOne) + parseFloat(anotherNumberTwo);
+const testSum = Number(anotherNumberOne) + Number(anotherNumberTwo);
 
 
 console.log(sum.toPrecision(3));
+console.log("Test sum " + testSum.toPrecision(3));
 
 
 // --------------------------------------
