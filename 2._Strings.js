@@ -7,12 +7,20 @@ const numberTwo = "2.30";
 // add those two numbers and show the result
 // you cannot touch line 1 neither line 2
 
+console.log(Number(numberOne) + Number(numberTwo))
 
 // --------------------------------------
 // Exercise 4 - Add the numbers and the total with 2 decimals
 
 const anotherNumberOne = "1.10";
 const anotherNumberTwo = "2.30";
+
+const sum = parseFloat(anotherNumberOne) + parseFloat(anotherNumberTwo);
+const testSum = Number(anotherNumberOne) + Number(anotherNumberTwo);
+
+
+console.log(sum.toPrecision(3));
+console.log("Test sum " + testSum.toPrecision(3));
 
 
 // --------------------------------------
@@ -24,6 +32,13 @@ const three = 98;
 
 // Show in the console the avg. with 5 decimals
 
+const sumArray = [10, 45, 98];
+const sum1 = one + two + three;
+const avg = sum1/sumArray.length;
+const formatAvg = avg.toFixed(5);
+
+console.log(formatAvg);
+
 
 
 
@@ -32,9 +47,9 @@ const three = 98;
 
 const letters = "abc";
 // Get me the character "c"
+const characterC = letters[2];
 
-
-
+console.log(characterC)
 
 // --------------------------------------
 // Exercise 7 - Replace
@@ -42,6 +57,11 @@ const letters = "abc";
 const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
+
+const capitalizedFact = fact.replace("javascript", "Javascript");
+
+console.log(capitalizedFact);
+
 
 
 // --------------------------------------
